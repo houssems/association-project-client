@@ -1,0 +1,156 @@
+#textblock {
+    background-color: #210002;
+    height: 100vh;
+}
+
+#textblock-container {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+
+#textblock-title {
+    color: #ffaf1b;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: "Helvetica Neue";
+}
+
+#textblock-content {
+    color: #ffaf1b;
+    font-size: 20px;
+}
+
+#textblock-footer {
+    color: #ffaf1b;
+    font-size: 15px;
+    font-weight: 400;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+#textblock-devsense {
+    text-decoration: none;
+    color: #ffaf1b;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.animation, .animation_layer {
+    height: 1000px;
+}
+
+.animation {
+    display: block;
+    position: relative;
+    z-index: 10;
+}
+
+.animation_layer {
+    /*background-position: bottom center;
+    background-size: auto 1038px;
+    background-repeat: repeat-x;
+    width: 100%;
+    position: absolute;*/
+
+    background-position: bottom center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.animation_layer.parallax {
+    /*position: fixed;*/
+    position: absolute
+}
+
+#background-gradient {
+    background-image: url(../../images/parallax/background.png);
+}
+
+#sun {
+    background-image: url(../../images/parallax/sun.svg);
+}
+
+#birds {
+    background-image: url(../../images/parallax/birds.png);
+}
+
+#last-trees {
+    background-image: url("../../images/parallax/last tree and mountain.svg");
+}
+
+#middle-trees {
+    background-image: url("../../images/parallax/Middle tree and mountain.svg");
+}
+
+#middle-mountain {
+    background-image: url("../../images/parallax/middle mountain.svg");
+}
+
+#forground-trees {
+    background-image: url("../../images/parallax/foreground tree and mountain.svg");
+}
+
+.homepage__section1 {
+    width: 100%;
+    min-height: 100vh;
+    background: url("../../images/homepage.jpg") no-repeat;
+    background-size: cover;
+    /*filter: blur(4px) brightness(50%);*/
+    /*background: linear-gradient(180deg, #63AD9C, #E6EEE0);*/
+}
+
+.homepage_selectSection {
+    display: flex;
+    margin-top: 150px;
+    /*flex-direction: column;*/
+    justify-content: center;
+    height: 230px; /*100vh;*/
+}
+
+.homepage_selectSection .homepage_selectSection__image {
+    width: 128px;
+    height: 128px;
+    cursor: pointer;
+}
+
+.homepage_selectSection .homepage_selectSection__image:hover {
+    padding: 30px;
+    background-color: #0ea8d7;
+    border-radius: 15px;
+    transition: all 0.5s ease-out;
+}
+
+.homepage_selectSection__itemContainer {
+    text-align: center;
+}
+
+.homepage_selectSection .homepage_selectSection__background {
+    background: url("../../images/parallax/gray-backgound.jpg");
+    background-position: 230px 83px;
+    opacity: 0.65;
+}
+
+.homepage__header {
+    /*position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;*/
+    padding-top: 50px;
+    z-index: 55;
+    color: white;
+    text-align: center;
+}
+
+.homepage__user {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
