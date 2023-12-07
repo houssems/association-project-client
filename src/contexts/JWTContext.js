@@ -173,8 +173,11 @@ function AuthProvider({ children }) {
     };
 
     const getInitials = () => {
-        console.log(state);
-        return ``;
+        return `${state.user.firstName[0]} ${state.user.lastName[0]}`;
+    }
+
+    const getFullName = () => {
+        return `${state.user.firstName} ${state.user.lastName}`;
     }
 
     return (
@@ -186,6 +189,7 @@ function AuthProvider({ children }) {
                 logout,
                 register,
                 getInitials,
+                getFullName,
             }}
         >
             {children}
