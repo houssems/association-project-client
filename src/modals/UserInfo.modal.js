@@ -2,20 +2,14 @@ import {Button, Form, Modal} from "react-bootstrap";
 import React, {useState} from 'react';
 
 import useAuth from "../hooks/useAuth";
-import UserInfoForm from "../components/user/UserInfoForm";
+import UserEditForm from "../components/user/UserEditForm";
 
-function UserInfoModal(props) {
+function UserInfoModal({onSubmit}) {
 
     const {user} = useAuth();
-    const [validated, setValidated] = useState(false);
-
-    const handleSubmit = (newUser) => {
-        console.log(newUser);
-    };
 
     return (
         <Modal
-            {...props}
             size="lg"
             aria-labelledby="contained-modal-title-vcenter"
             centered
@@ -27,7 +21,7 @@ function UserInfoModal(props) {
             </Modal.Header>
             <Modal.Body>
                 {user && (
-                    <UserInfoForm userObj={user} submit={handleSubmit} isEditing={true}/>
+                    <UserEditForm userObj={user} onSubmit={onSubmit}/>
                 )}
             </Modal.Body>
         </Modal>

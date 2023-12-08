@@ -23,12 +23,12 @@ function AuthModal(props) {
         >
             <Modal.Header closeButton>
                 <Modal.Title id="contained-modal-title-vcenter">
-                    LogIn
+                    {currentTab}
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
                 {currentTab === AuthTabEnums.LOGIN && <UserLoginForm switchToTab={switchToTab} onHide={props.onHide}/>}
-                {currentTab === AuthTabEnums.SIGN_UP && <UserRegisterForm/>}
+                {currentTab === AuthTabEnums.SIGN_UP && <UserRegisterForm onSubmit={props.onHide}/>}
             </Modal.Body>
         </Modal>);
 }
